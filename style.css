@@ -1,3 +1,68 @@
-body {
-  background: fixed;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: local("Bebas Neue Regular"), local("BebasNeueRegular"),
+    url("bebasneue/bebasneueregular.woff2") format("woff2"),
+    url("bebasneue/bebasneueregular.woff") format("woff"),
+    url("bebasneue/bebasneueregular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "bebas-bold";
+  src: local("Bebas Neue Bold"), local("BebasNeueBold"),
+    url("bebasneue/bebasneuebold.woff2") format("woff2"),
+    url("bebasneue/bebasneuebold.woff") format("woff"),
+    url("bebasneue/bebasneuebold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+a {
+  font-family: "bebas-bold";
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+body,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header__top,
+.header__menu {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.header__top,
+.header__menu {
+  justify-content: space-between;
+}
+
+.header__top {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.header__link {
+  text-transform: uppercase;
 }
