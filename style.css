@@ -46,6 +46,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -236,6 +240,20 @@ a {
 
   .header__item:last-child .header__link {
     padding-right: 10px;
+  }
+}
+
+@media (max-width: 980px) {
+  .carousel {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .carousel__slide {
+    border: none;
+    padding-left: 15px;
+  }
+  .carousel__slide:first-child {
+    padding-left: 15px;
   }
 }
 
